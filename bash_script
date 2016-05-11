@@ -1,0 +1,18 @@
+#!/bin/bash
+#A simple script
+
+## date format to append to end of file ##
+today=$(date +"%F")
+
+##backup path ##
+BAK="path/to/where/you/want/file/newhires_$today"
+
+# LDAP Search query
+cat user.txt | while read line; do echo "##$line###";
+ldapsearch -w [LDAP user password goes] -h [ldap server address here] -x -D [ldap username] -b "dc=$1,dc=$2,dc=$3" -LLL extensionAttribute1=$line name givenName sn mail physicalDeliveryOfficeName extensionAttribute1 extensionAttribute3; done &gt; $BAK
+
+#convert LDIF to csv
+python LDIFtoCSV/LDIFtoCSV.py $BAK &gt; $BAK.csv
+
+#send email with file attached
+mutt -a $BAK.csv -s "[Subject line of choice]"  -- name@name.com
