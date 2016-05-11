@@ -1,9 +1,10 @@
 # VBAandLDAP
-System/Applications Used
-Outlook 2013
-VBA 7.1
-Linux (RHEL 5)
-Python 2.7.9
+System/Applications Used <br/>
+Outlook 2013 <br/>
+VBA 7.1<br/>
+Linux (RHEL 5)<br/>
+Python 2.7.9<br/>
+Assumption you understand LDAP query syntax <br/>
 Assumption you understand how to use a bash script
 
 This repository contains the files you will need to have in place to parse a string of text from an email or multiple emails in a folder 
