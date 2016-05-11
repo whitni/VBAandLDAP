@@ -1,6 +1,7 @@
 # VBAandLDAP
 System/Applications Used
 Outlook 2013
+VBA 7.1
 Linux (RHEL 5)
 Python 2.7.9
 Assumption you understand how to use a bash script
