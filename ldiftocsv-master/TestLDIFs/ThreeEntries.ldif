@@ -1,0 +1,18 @@
+dn: cn=John E Doe, o=University of Higher Learning, c=US
+cn: John E Doe
+cn: John Doe
+objectclass: person
+sn: Doe
+
+dn: cn=Bjorn L Doe, o=University of Higher Learning, c=US
+cn: Bjorn L Doe
+cn: Bjorn Doe
+objectclass: person
+sn: Doe
+
+dn: cn=Jennifer K. Doe, o=University of Higher Learning, c=US
+cn: Jennifer K. Doe
+cn: Jennifer Doe
+objectclass: person
+sn: Doe
+
